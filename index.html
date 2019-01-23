@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reader's Hub</title>
+    <link rel="stylesheet" href="homepage.css"/>
+</head>
+<body>
+        <div class="header">
+                <h1 class="head">Reader's Hub</h1>
+                <p class="head2">Tired of going to the library? We booked you a spot!</p>
+              </div>
+    <div class="navbar-splash">
+            <a href="">
+                    <img src="logo.png" alt="logo" height="80px" width="100px" class="pic" />
+            </a>
+        <div class="nav-notebank-searchbar">
+        <form action="/notebank" id="notebank-search-form" tabindex="0">
+        <div class="input-group">
+        <input class="text-group-left" type="text2" placeholder="Search.."  name="notebank_qs" value="">
+        </div>
+        </form>
+        </div>
+        
+        <div class="topnav"> 
+                <a class="active" href="Homepage.html">Home</a> 
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Us</a>
+                <a class="help" href="#contact">Help</a>
+            </div>
+
+        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer"><img src="download (1).jpg" alt="Avatar" class="avatar" width="50px" height="50px"></div>
+            <div class="container"><label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit" class="loginbtn">Login</button>
+            <label><input type="checkbox" checked="checked" name="remember">Remember me </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            
+            
+
+            <button class="resetbtn" onclick="document.getElementById('id0001').style.display='block'">Reset Password</button>
+            <div id="id0001" class="modal3">
+                <span onclick="document.getElementById('id0001').style.display='none'" class="close3" title="Close Modal">&times;</span>
+                <form class="modal-content3" action="/action_page.php">
+                <div class="imgcontainer"></div>
+                <div class="container"><label for="uname"><b class="rst">Reset Password</br>Enter the email address associated with your account.</b></label>
+                <input type="text" placeholder="Email" name="uname" required>
+                <button type="submit" class="loginbtn3">Send Reset Link</button>
+                <div class="container3">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn3">Cancel</button>
+                    </div>
+
+           
+            </div>
+            </form>
+        </div>
+    </div>
+</form>
+</div>
+
+        <script>
+            var modal=document.getElementById('id01');
+            window.onclick=function(event){
+                if(event.target==modal){
+                    modal.style.display="none";
+                }
+            }
+            </script>
+            <button onclick="document.getElementById('id001').style.display='block'">Sign Up</button>
+            <div id="id001" class="modal2">
+                <span onclick="document.getElementById('id001').style.display='none'" class="close2" title="Close Modal">&times;</span>
+                <form class="modal-content2" action="/action_page.php">
+                <div class="container2">
+                    <h1>Sign Up</h1>
+                    <p> Please fill in this form to create an account </p>
+                    <hr/>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required></br>
+                    <label><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember Me</label>
+                    <p> By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms and Conditions</a>.</p>
+                    <div class="clearfix2">
+                        <button type="button" onclick="document.getElementById('id001').style.display='none'" class="cancelbtn2">Cancel</button> 
+                        <button type="submit" class="signup">Sign Up</button>
+                    </div> 
+                </div>
+                </form>
+        </div>
+    </div>
+    <div class="row">
+            <div class="column side">
+              <div class="rmenus">
+                    <li id="menu-item-379" ><h2>Books By Genres</h2>
+                    <ul class="sub-menu">
+                        <li id="menu-item-367" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-367"><a href="Adventure.html">Adventure</a><span> 1,589</span></li>
+                        <li id="menu-item-376" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-376"><a href="Biography.html">Biography</a><span> 768</span></li>
+                        <li id="menu-item-372" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-372"><a href="Drama.html">Drama</a><span> 861</span></li>
+                        <li id="menu-item-414" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-414"><a href="Fantasy.html">Fantasy</a><span> 1,032</span></li>
+                        <li id="menu-item-422" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-422"><a href="Horror.html">Horror</a><span> 987</span></li>
+                        <li id="menu-item-421" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-421"><a href="History.html">History</a><span> 625</span></li>
+                        <li id="menu-item-424" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-424"><a href="Mystery.html">Mystery</a><span> 1,910</span></li>
+                        <li id="menu-item-425" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-425"><a href="Romance.html">Romance</a><span> 2,653</span></li>
+                        <li id="menu-item-416" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-416"><a href="Sciencefiction.html">Science Fiction</a><span> 589</span></li>
+                        <li id="menu-item-418" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-418"><a href="Thriller.html">Thriller</a><span> 2,007</span></li>
+                    </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-467"><a href="Booksbyyear.html"><h2>Books By Year</h2></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-32199">2018<span> ~786</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-466">2017<span> ~872</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-465">2016<span> ~598</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-464">2015<span> ~482</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-463">2014<span> ~321</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-462">2013<span> ~263</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-461">2012<span> ~504</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-460">2011<span> ~193</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-459">2010<span> ~656</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-468">Old Books<span> ~276</span></li>
+                        </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children menu-item-479"><a href="Booksbylanguage.html"><h2>Books By Language</h2></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-477">English<span> 8,714</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-478">Swahili<span> ~1,423</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-478">Spanish<span> ~3,241</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-478">French<span> ~4,387</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-478">German<span> ~1,072</span></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-478">Chinese<span> ~705</span></li>
+                        </ul>
+                        </li></br>
+                   </div>
+            </div>
+            
+            <div class="column middle">
+                    <script src="hello.js"></script>
+                    <img name="slide" width="650" height="600" class="animation">
+            </div>
+            
+            <div class="column side">
+                    <div class="comment">
+                            <h3 class="comm">Customer Feedback</h3>
+                            </div></br>
+                                <div class="comment">
+                                <p class="comm">This is the best place I've found on the internet. They offfer the best quality online books. I buy books here atleast once a week. Thank you Reader's Hub and keep up the god work.</p>
+                                <h5 class="person">by George Orwell</h5>
+                                </div></br>
+                                <div class="comment">
+                                <p class="comm">This is the best place I've found on the internet. They offfer the best quality online books. I buy books here atleast once a week. Thank you Reader's Hub and keep up the god work.</p>
+                                <h5 class="person">by George Orwell</h5>
+                                </div></br>
+                                <div class="comment">
+                                <p class="comm">This is the best place I've found on the internet. They offfer the best quality online books. I buy books here atleast once a week. Thank you Reader's Hub and keep up the god work.</p>
+                                <h5 class="person">by George Orwell</h5>
+                                </div></br>
+                                <div class="comment">
+                                <p class="comm">This is the best place I've found on the internet. They offfer the best quality online books. I buy books here atleast once a week. Thank you Reader's Hub and keep up the god work.</p>
+                                <h5 class="person">by George Orwell</h5>
+                                </div></br>
+                                <div class="comment">
+                                <p class="comm">This is the best place I've found on the internet. They offfer the best quality online books. I buy books here atleast once a week. Thank you Reader's Hub and keep up the god work.</p>
+                                <h5 class="person">by George Orwell</h5>
+                                </div></br>
+                               
+                                </div>
+                    </div>
+                    
+        <div class="foter">
+                <div id="button"></div>
+              <div id="container">
+              <div id="cont">
+              <div class="footer_center">
+                     <h3>
+                            <div class="foot"> 
+                                    <h2 class="fol">Follow Us On Social Media</h2>
+                                    <a class="fb"><img src="facebook.jpg" alt="Avatar" class="avatar" width="50px" height="50px"></a> 
+                                    <a class="tt"><img src="twitter.jpg" alt="Avatar" class="avatar" width="50px" height="50px"></a> 
+                                    <a class="ig"><img src="instagram.jpg" alt="Avatar" class="avatar" width="50px" height="50px"></a>
+                                    <p class="cp">Copyright &copy; 2018</br>Reader's Hub</br> All Rights Reserved</p>
+                                </div>
+                     </h3>
+              </div>
+              </div>
+              </div>
+              </div>
+</body>
+</html>
