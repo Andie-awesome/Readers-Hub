@@ -1,0 +1,414 @@
+*{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.pic{ 
+    float: left;
+}
+.navbar-splash{
+    overflow: hidden;
+    background-color: rgb(69, 153, 179);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+.nav-notebank-searchbar{
+    float: left;
+    padding-top: 0px;
+}
+.text-group-left{
+    height: 30px;
+    background: #ddd;
+    width: 1200px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus{
+    color: red;
+    cursor: pointer;
+}
+.cancelbtn{
+    background-color: #f44336;
+    padding: 10px 10px;
+    margin: 8px 8px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.8;
+    float: inherit;
+}
+.loginbtn {
+    float: initial;
+    width: 10%;
+}
+.animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom
+{
+    from{-webkit-transform: scale(0)}
+    to{-webkit-transform: scale(1)}
+}
+@keyframes animatezoom{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+input[type=text],
+input[type=password]{
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus,
+input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+button{
+    background-color: #1287aa;
+    color: white;
+    padding: 10px;
+    margin: 8px 8px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    width: 5%;
+    opacity: 0.8;
+    float: right;
+}
+button:hover{
+    opacity: 1;
+}
+.modal3{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    padding-top: 10px;
+}
+.modal-content3{
+    background-color: #fefefe;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close3{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color:white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close3:hover,
+.close3:focus{
+    color: red;
+    cursor: pointer;
+}
+.loginbtn3 {
+    float: initial;
+    width: 15%;
+}
+.resetbtn{
+    width: 20%;
+}
+.cancelbtn3{
+    background-color: #f44336;
+    padding: 10px 10px;
+    margin: 8px 8px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    width: 15%;
+    opacity: 0.8;
+    float: initial;
+}
+.container3{
+    padding: 16px;
+}
+.rst{
+    color: rgb(255, 255, 255)
+}
+.cancelbtn2{
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn2, .signupbtn{
+    float: left;
+    width: 20%;
+}
+.container2{
+    padding: 16px;
+}
+.modal2{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+.modal-content2{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+hr{
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+.close2{
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+.close2:hover,
+.close2:focus{
+    color: #f44336;
+    cursor: pointer;
+}
+.clearfix2::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and(max-width:300px){
+    .cancelbtn2, .signupbtn {
+        width: 100%;
+    }
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+.topnav .help{
+        border-right: none;
+      }
+.topnav a:hover{
+    opacity: 1;
+    background-color: #1889ac;
+}
+.topnav a:active{
+    background-color: #0984aa;
+    color:white
+}
+.foter{
+    text-align: initial;
+  }
+  .foter #button{
+      width:20px;
+      height:20px;
+      border: rgb(15, 139, 177) 10px solid;
+      border-radius:45px;
+      margin:0 auto;
+      position:relative;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+  }
+  .foter #button:hover{
+      width:35px;
+      height:35px;
+      border: rgb(15, 139, 177) 18px solid;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      position:relative;
+  }
+  .foter {
+      bottom:0;
+      left:0;
+      position:fixed;
+      width: 100%;
+      height: 2em;
+      overflow:hidden;
+      margin:0 auto;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      z-index:999;
+  }
+  .foter:hover {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      height: 10em;
+  }
+  .foter #container{
+      margin-top:5px;
+      width:100%;
+  height:100%;
+    position:relative;
+    top:0;
+    left:0;
+      background: #0b566d;
+  }
+  .foter #cont{
+    position:relative;
+    top:-45px;
+    right:190px;
+      width:150px;
+      height:auto;
+      margin:0 auto;
+  }
+  .footer_center{
+      width: 500px;
+      float:left;
+  
+  }
+  .foter h3{
+      font-family: 'forte';
+      font-size: 30px;
+      font-weight: 100;
+      margin-top:50px;
+
+  }
+  .fb{
+    float: left;
+    padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.tt{
+    float: left;
+    padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.ig{
+    float: left;
+    padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.foot a:hover{
+    opacity: 1;
+}
+.foot a:active{
+    background-color: #0984aa;
+}
+.fol{
+    font-family: 'forte';
+      font-size: 20px;
+      font-weight: 100;
+      margin-top:50px;
+}
+.cp{
+    font-family: 'arial';
+    font-size: 15px;
+    font-weight: bold;
+    font-style:italic;
+}
+ /* Style the header */
+ .header {
+    background-color: rgb(69, 153, 179);
+    padding: 10px;
+    text-align: center;
+}
+  .head{
+    color:rgb(2, 30, 41);
+    font-family:Algerian;
+    font-weight: bold;
+    font-style:italic;
+    font-size:30px;
+    text-decoration:underline;
+}
+.head2{
+    font-family: Brush Script MT;
+    font-weight: 100;
+    color:rgb(2, 30, 41);
+    font-size:25px;
+}
+@media screen and (max-width: 600px) {
+    .foter, .navbar-splash {
+      width: 100%;
+    }
+  }
+  .item{
+      display: block;
+      float: left;
+      text-align: center;
+      text-decoration: none;
+      background-color: #e8eef0;
+  }
+body{
+    background-color: #e8eef0;
+}
+.words{
+    float: left;
+    padding: 40px 40px;
+}
+.headder{
+    font-family: 'Old English Text MT';
+    font-size: 65px;
+    font-weight: bold;
+    font-style:italic;
+    text-decoration: underline;
+}
+.year, .price{
+    font-family: 'Old English Text MT';
+    font-size: 40px;
+    font-weight: bold;
+}
